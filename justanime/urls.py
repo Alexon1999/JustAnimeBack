@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework.schemas import get_schema_view
 
 '''
 base_url: api/
@@ -22,5 +23,7 @@ base_url: api/
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('api.urls'))
+    path('api/', include('api.urls')),
+    path('openapi/', get_schema_view(
+    ), name='openapi-schema'),
 ]

@@ -1,11 +1,19 @@
 from rest_framework import serializers
-from .models import User
+from .models import User, Content
+
+
+class ContentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Content
+        fields = '__all__'
 
 
 class UserSerializer(serializers.ModelSerializer):
+    watch_list = ContentSerializer(many=True)
+
     class Meta:
         model = User
-        fields = ['nom', 'prenom', 'mail', 'mdp']
+        fields = ['id', 'nom', 'prenom', 'mail', 'mdp', 'watch_list']
         extra_kwargs = {'mdp': {'write_only': True}}
 
 
