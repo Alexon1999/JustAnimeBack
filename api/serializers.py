@@ -9,7 +9,7 @@ class ContentSerializer(serializers.ModelSerializer):
 
 
 class UserSerializer(serializers.ModelSerializer):
-    watch_list = ContentSerializer(many=True)
+    watch_list = ContentSerializer(many=True, read_only=True, required=False)
 
     class Meta:
         model = User

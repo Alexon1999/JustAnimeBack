@@ -19,7 +19,8 @@ class User(models.Model):
     prenom = models.CharField(max_length=31)
     mail = models.CharField(max_length=31, unique=True)
     mdp = models.CharField(max_length=31)
-    watch_list = models.ManyToManyField(Content, blank=True)
+    watch_list = models.ManyToManyField(
+        Content, blank=True)
 
     def __str__(self):
         return self.nom + " " + self.prenom
