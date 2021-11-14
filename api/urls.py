@@ -18,7 +18,7 @@ urlpatterns = [
     path('create-user/', views.UserCreateView.as_view()),
     path('user/<int:pk>/', views.UserView.as_view()),
     path('login/', views.SeConnecterView.as_view()),
-    path('add-to-watchlist/', views.CreateContentView.as_view()),
+    path('watchlist/', views.ContentView.as_view()),
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('', TemplateView.as_view(
