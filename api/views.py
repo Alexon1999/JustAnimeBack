@@ -30,7 +30,7 @@ class SeConnecterView(APIView):
             return Response({"msg": "Nous n'avons pas trouvé pas trouvé d'utilisateur avec ces identifiants "}, status=status.HTTP_401_UNAUTHORIZED)
 
 
-# Ajoutez pour un utilisateur, le content dans sa watchlist
+# Ajouter/Supprimer pour un utilisateur, le content dans sa watchlist
 class ContentView(APIView):
     serializer_class = ContentSerializer
     queryset = Content.objects.all()

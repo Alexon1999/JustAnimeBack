@@ -1,7 +1,7 @@
 # Objectif
 - Une plateforme de streaming qui permettra de donner accès aux catalogues Animes et avoir la possibilité d'obtenir une watchlist.
 
-# Fonctionnalité de l'API
+# Fonctionnalités de l'API
 - Cette API permettra d'enregistrer les données d'un utilisateur.
 - Permettre la gestion de données des utilisateurs en tant qu'admin.
 - Créer un watchlist pour des utilisateurs.
