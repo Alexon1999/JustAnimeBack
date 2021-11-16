@@ -8,7 +8,7 @@
 - Disponibilité d'une documentation swagger dans l'API.
 - Test de l'API avec Postman.
 - Test unitaire.
-- Cette API intéragit avec un front développé sous Flutter (https://github.com/arcreane/mobile-mugiwara-s.git).
+- Cette API intéragit avec un front développé sous Flutter (https://github.com/ghilesalt/mobile-mugiwara-s.git).
     - Utilisation d'une API externe pour récupérer les données sur les Animes.
 
 ## Pour Lancer
