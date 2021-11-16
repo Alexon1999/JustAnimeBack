@@ -7,7 +7,7 @@
 - Créer un watchlist pour des utilisateurs.
 - Disponibilité d'une documentation swagger dans l'API.
 - Test de l'API avec Postman.
-- Test unitaire.
+- Tests unitaires dans api/test.py.
 - Cette API intéragit avec un front développé sous Flutter (https://github.com/ghilesalt/mobile-mugiwara-s.git).
     - Utilisation d'une API externe pour récupérer les données sur les Animes.
 
