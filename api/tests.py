@@ -2,6 +2,7 @@ from django.test import TestCase
 from .models import User
 # Create your tests here.
 
+# https://www.digitalocean.com/community/tutorials/how-to-add-unit-testing-to-your-django-project-fr
 
 class ViewsTestCase(TestCase):
     def setUp(self):
